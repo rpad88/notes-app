@@ -1,14 +1,17 @@
 import React from 'react'
 import './Note.css'
-export default function Note({note}) {
+import {MdDeleteForever} from 'react-icons/md'
+
+export default function Note({id, text, date}) {
+
   return (
-    <div className='note' key={note.id}>
+    <div className='note' key={id}>
       <div className="note-content">
-        {note.text}
+        {text}
       </div>
       <div className="note-footer">
-        <small>{note.date}</small>
-        <button className='del'>&times;</button>
+        <small>{date}</small>
+        <button className='del'><MdDeleteForever /></button>
       </div>
     </div>
   )

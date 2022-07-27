@@ -22,14 +22,12 @@
 .note-footer .del {
     border: none;
     background-color: transparent;
-    font-size: 20px;
+    font-size: 1em;
     color: darkred;
     padding: 0 2px;
-    height: 100%;
 }
 
 .note-footer .del:hover {
     cursor: pointer;
     color: red;
-    font-weight: bold;
 }
