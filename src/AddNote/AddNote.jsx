@@ -5,26 +5,24 @@ export default function AddNote({handleAddNote}) {
 
   const [noteText, setNoteText] = useState('')
 
-  function handleChange(e) {
-    setNoteText(e.target.value)
-  }
-
   function handleSave(e) {
     e.preventDefault()
-    console.log("submit");
+    //noteText.trim() -> remove espaços em branco, evitando de adicionar uma nota apenas com espaços
     if(noteText.trim().length > 0) handleAddNote(noteText)
     setNoteText('')
   }
     
   return (
-    <div>
+    <div className='note new'>
       <form action="" onSubmit={handleSave}>
-        <input
+        <textarea
           type="text"
           placeholder="Type to add a new note..."
+          rows={8}
           value={noteText}
-          onChange={handleChange}
+          onChange={(e) => setNoteText(e.target.value)}
         />
+        <button type="submit">Save</button>
       </form>
     </div>
   );

@@ -3,12 +3,15 @@
     align-items: center;
     background-color: lightgray;
     border-radius: 10px;
-    width: 250px;
+    width: 1fr;
+    margin-right: 15px;
+    height: 1.4em;
 }
 
 .search input {
     outline: none;
     border: none;
     background-color: transparent;
-    width: 220px;
+    width: 100%;
+    font-size: 1.1em;
 }

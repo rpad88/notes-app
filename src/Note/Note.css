@@ -7,11 +7,20 @@
     padding: 1rem;
     min-height: 170px;
     white-space: pre-wrap;
+    text-align: start;
 }
 
-/* .note-content {
-    display: flex;
-} */
+.note.new {
+    background-color: lightsteelblue;
+}
+
+.note.new textarea {
+    border: none;
+    outline: none;
+    resize: none;
+    min-height: 160px;
+    background-color: transparent;
+}
 
 .note-footer {
     display: flex;
